@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* HEADER */
+
+
+
+header {
+    height: 20vh;
+    background-color: #265F68;
+    
+
+}
+
+.perfil {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+
+
+}
+
+.card-img {
+    height: 150px;
+    
+    
+    
+
+}
+
+.card-img img {
+    height: 100%;
+    width: auto;
+
+} 
+
+
+/* NAV */
+
+nav{
+    background-color: #346f79;
+    height: 5vh;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    
+    
+}
+
+nav ul{
+
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-family: Perpetua Titling MT;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    height: 40px;
+}
+
+nav ul li a:hover{
+    background-color: #4a757c;
+
+}
+
+/* MAIN */
+main {
+    
+
+
+}
+
+.imagen1 {
+    
+    
+    
+    
+    
+}
+
+.estudio1 {
+
+    height: 400px;
+    left: 20px;
+    
+
+}
+
+.estudio1 img {
+
+    height: 100%;
+    width: auto;
+    
+}
+
+.imagen2 {
+    
+    
+}
+
+
+.estudio2 {
+
+    height: 300px;
+    right: 20px;
+    
+}
+
+.estudio2 img {
+
+    height: 78%;
+    width: auto;
+
+
+}
+
+
+
+.chat {
+
+    width: 60px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
+}
+
+.chat img {
+
+    width: 100%;
+    height: auto;
+}
+
+.chat img:hover {
+
+    filter: saturate(80%);
+    filter: opacity(50%);
+
+}
+
+
+/* FOOTER */
+footer {
+    height: 20vh;
+    background-color: #265F68;
+    color: #ffff;
+    position: sticky;
+    
+}
+
+.footer-social {
+
+    display: inline-block;
+    width: 75vw;
+}
+
+
+.footer-social ul li {
+
+        display: inline-block
+        
+        
+}
+.social img {
+    width: 60px;
+    height: auto;
+    margin: 50px;
+
+}
+
+.social img:hover {
+
+    filter: saturate(80%);
+    filter: opacity(50%);
+}
+
+.social-experta img {
+
+    width: 200px;
+    height: auto;
+    margin: 50px;
+}
+
+.social-experta img:hover {
+
+    filter: saturate(80%);
+    filter: opacity(50%);
+
+}
+
+@media only screen and ( max-width:768px){
+    header{
+        height: 15vh;
+    }
+
+    .perfil {
+        position: absolute;
+        top: 5px;
+        left: 20px;
+        
+    
+    
+    }
+    
+    .card-img {
+        height: 150px;
+        
+        
+        
+        
+        
+        
+    
+    }
+    
+    .card-img img {
+        height: 100%;
+        width: auto;
+        display: block;
+        margin-left: auto; 
+        margin-right: auto;
+    
+        
+    
+    } 
+
+    nav{
+        height: 250px;
+
+    }
+
+    nav ul{
+      
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+       
+    
+    main{
+
+        height: 700px;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 50% 50% ;
+        grid-template-areas: "foto1 foto2";               
+        justify-content: center;
+        align-content: space-evenly;
+
+
+    }
+
+    .estudio1{
+        grid-area:foto1;
+        
+    
+    }
+
+    .estudio2{
+        grid-area:foto2;
+        height: 299px;
+        width: auto;
+    }
+
+    .chat {
+
+        width: 50px;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+    
+    }
+    
+    .chat img {
+    
+        width: 100%;
+        height: auto;
+    }
+    
+    .chat img:hover {
+    
+        filter: saturate(80%);
+        filter: opacity(50%);
+    
+    }
+    
+
+    footer{
+        height: 20vh;
+        
+    }
+
+    .footer-social {
+
+        display: inline-block;
+        width: 100%;
+    }
+
+
+    
+    
+    .footer-social ul li {
+    
+            display: inline-block
+            
+            
+    }
+    .social img {
+        width: 30px;
+        height: auto;
+        
+    
+    }
+    
+    .social img:hover {
+    
+        filter: saturate(80%);
+        filter: opacity(50%);
+    }
+    
+    .social-experta img {
+    
+        width: 130px;
+        height: auto;
+        margin: 35px;
+        
+    }
+    
+    .social-experta img:hover {
+    
+        filter: saturate(80%);
+        filter: opacity(50%);
+    
+    }
+}
+
+@media only screen and ( min-width: 768px){
+
+    header{
+        
+    }
+
+    .perfil {
+        position: absolute;
+        top: 5px;
+        left: 20px;
+        
+    }
+    
+    .card-img {
+        height: 150px;
+        
+      
+    
+    }
+    
+    .card-img img {
+        height: 100%;
+        width: auto;
+        display: block;
+        margin-left: auto; 
+        margin-right: auto;
+    
+        
+    } 
+
+    nav{
+        height: 50px;
+        
+
+    }
+
+    nav ul{
+        
+        flex-direction: row;
+        align-items: center;
+        
+        
+    }
+       
+    
+    main{
+
+        height: 800px;
+        grid-template-columns: 50%;
+        grid-template-rows: 50% 50% ;
+        grid-template-areas: "foto1 foto2";               
+        justify-content: center;
+        align-content: space-evenly;
+
+
+    }
+
+    .estudio1{
+        grid-area:foto1;
+        height: 500px;
+        
+    
+    }
+
+    .estudio2{
+        grid-area:foto2;
+        height: 375px;
+        width: auto;
+    }
+
+    .chat {
+
+        width: 50px;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+    
+    }
+    
+    .chat img {
+    
+        width: 100%;
+        height: auto;
+    }
+    
+    .chat img:hover {
+    
+        filter: saturate(80%);
+        filter: opacity(50%);
+    
+    }
+    
+
+    footer{
+        height: 20vh;
+        
+    }
+
+    .footer-social {
+
+        display: inline-block;
+        width: 100%;
+    }
+
+    
+    
+    
+    .footer-social ul li {
+    
+            display: inline-block
+            
+            
+    }
+    .social img {
+        width: 50px;
+        height: auto;
+        
+    
+    }
+    
+    .social img:hover {
+    
+        filter: saturate(80%);
+        filter: opacity(50%);
+    }
+    
+    .social-experta img {
+    
+        width: 200px;
+        height: auto;
+        margin: 35px;
+        
+    }
+    
+    .social-experta img:hover {
+    
+        filter: saturate(80%);
+        filter: opacity(50%);
+    
+    }
+    
+
+
+}
+
+@media only screen and ( min-width: 992px){
+
+}
+
+@media only screen and ( min-width: 1200px){
+
+   
+
+}
+
+    

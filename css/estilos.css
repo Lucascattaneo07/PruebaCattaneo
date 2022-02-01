@@ -23,15 +23,17 @@ header {
 
 }
 
-.perfil {
+#perfil {
     position: absolute;
     top: 15px;
     left: 20px;
+    
 
 
 }
 
 .card-img {
+    
     height: 150px;
     
     
@@ -40,6 +42,7 @@ header {
 }
 
 .card-img img {
+    
     height: 100%;
     width: auto;
 
@@ -99,24 +102,48 @@ main {
 
 }
 
-#prueba {
-    display: flex;
+
+
+#beneficios{
+
+    display: grid;
+    height: 600px;
     width: 100%;
-    height: 50vh;
-    padding: 0.5rem;
-    flex-wrap: wrap;
-  }
-   
-section div{
-    background-color: #81b9c2;
-    font-size: 2rem;
-    color: white;
-    flex: 1 400px;
-    padding: 2rem;
-    margin: 0.5rem;
+    background-color: rgb(163, 238, 163);
+    grid-template-columns: 5% 26.66% 5% 26.66% 5% 26.66% 5%;
+    grid-template-rows: 5% 90% 5%;
+    grid-template-areas: "a1 a1 a1 a1 a1 a1 a1"
+                         "a2 a3 a4 a5 a6 a7 a8"
+                         "a9 a10 a11 a12 a13 a14 a15";
+                         
+    
   }
 
-.imagen1 {
+  #exp1 {
+      background-color:rgb(218, 64, 18);
+      grid-area: a3
+
+
+  }
+
+  #exp2{
+      background-color: rgb(147, 23, 204);
+      grid-area: a5
+
+
+  }
+
+  #exp3{
+      background-color: rgb(215, 218, 18);
+      grid-area: a7
+
+
+  }
+
+ 
+
+
+
     
     
     
@@ -128,7 +155,7 @@ section div{
 
     height: 400px;
     width: auto;
-    left: 20px;
+   
     
 
 }
@@ -226,306 +253,7 @@ footer {
 
 }
 
-@media only screen and ( max-width:768px){
-    header{
-        height: 15vh;
-    }
 
-    .perfil {
-        position: absolute;
-        top: 5px;
-        left: 20px;
-        
-    
-    
-    }
-    
-    .card-img {
-        height: 150px;
-        
-        
-        
-        
-        
-        
-    
-    }
-    
-    .card-img img {
-        height: 100%;
-        width: auto;
-        display: block;
-        margin-left: auto; 
-        margin-right: auto;
-    
-        
-    
-    } 
-
-    nav{
-        height: 250px;
-
-    }
-
-    nav ul{
-      
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        
-    }
-       
-    
-    main{
-
-        height: 700px;
-        grid-template-columns: 40% 40%;
-        grid-template-rows: 50% 50% ;
-        grid-template-areas: "foto1 foto2";               
-        justify-content: center;
-        align-content: space-evenly;
-
-
-    }
-
-    .estudio1{
-        grid-area:foto1;
-        
-    
-    }
-
-    .estudio2{
-        grid-area:foto2;
-        height: 299px;
-        width: auto;
-    }
-
-    .chat {
-
-        width: 50px;
-        position: fixed;
-        right: 10px;
-        bottom: 10px;
-    
-    }
-    
-    .chat img {
-    
-        width: 100%;
-        height: auto;
-    }
-    
-    .chat img:hover {
-    
-        filter: saturate(80%);
-        filter: opacity(50%);
-    
-    }
-    
-
-    footer{
-        height: 20vh;
-        
-    }
-
-    .footer-social {
-
-        display: inline-block;
-        width: 100%;
-    }
-
-
-    
-    
-    .footer-social ul li {
-    
-            display: inline-block
-            
-            
-    }
-    .social img {
-        width: 30px;
-        height: auto;
-        
-    
-    }
-    
-    .social img:hover {
-    
-        filter: saturate(80%);
-        filter: opacity(50%);
-    }
-    
-    .social-experta img {
-    
-        width: 130px;
-        height: auto;
-        margin: 35px;
-        
-    }
-    
-    .social-experta img:hover {
-    
-        filter: saturate(80%);
-        filter: opacity(50%);
-    
-    }
-}
-
-@media only screen and ( min-width: 768px){
-
-    header{
-        
-    }
-
-    .perfil {
-        position: absolute;
-        top: 5px;
-        left: 20px;
-        
-    }
-    
-    .card-img {
-        height: 150px;
-        
-      
-    
-    }
-    
-    .card-img img {
-        height: 100%;
-        width: auto;
-        display: block;
-        margin-left: auto; 
-        margin-right: auto;
-    
-        
-    } 
-
-    nav{
-        height: 50px;
-        
-
-    }
-
-    nav ul{
-        
-        flex-direction: row;
-        align-items: center;
-        
-        
-    }
-       
-    
-    main{
-
-        height: 800px;
-        grid-template-columns: 50%;
-        grid-template-rows: 50% 50% ;
-        grid-template-areas: "foto1 foto2";               
-        justify-content: center;
-        align-content: space-evenly;
-
-
-    }
-
-    .estudio1{
-        grid-area:foto1;
-        height: 500px;
-        
-    
-    }
-
-    .estudio2{
-        grid-area:foto2;
-        height: 375px;
-        width: auto;
-    }
-
-    .chat {
-
-        width: 50px;
-        position: fixed;
-        right: 10px;
-        bottom: 10px;
-    
-    }
-    
-    .chat img {
-    
-        width: 100%;
-        height: auto;
-    }
-    
-    .chat img:hover {
-    
-        filter: saturate(80%);
-        filter: opacity(50%);
-    
-    }
-    
-
-    footer{
-        height: 20vh;
-        
-    }
-
-    .footer-social {
-
-        display: inline-block;
-        width: 100%;
-    }
-
-    
-    
-    
-    .footer-social ul li {
-    
-            display: inline-block
-            
-            
-    }
-    .social img {
-        width: 50px;
-        height: auto;
-        
-    
-    }
-    
-    .social img:hover {
-    
-        filter: saturate(80%);
-        filter: opacity(50%);
-    }
-    
-    .social-experta img {
-    
-        width: 200px;
-        height: auto;
-        margin: 35px;
-        
-    }
-    
-    .social-experta img:hover {
-    
-        filter: saturate(80%);
-        filter: opacity(50%);
-    
-    }
-    
-
-
-}
-
-@media only screen and ( min-width: 992px){
-
-}
-
-@media only screen and ( min-width: 1200px){
-
-   
-
-}
 
 
     

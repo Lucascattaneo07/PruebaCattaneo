@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* BODY */
+
+.body {
+    
+
+    
+}
+
+/* HEADER */
+
+
+
+header {
+    height: 20vh;
+    background-color: #265F68;
+    
+
+}
+
+#perfil {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    
+
+
+}
+
+.card-img {
+    
+    height: 150px;
+    
+    
+    
+
+}
+
+.card-img img {
+    
+    height: 100%;
+    width: auto;
+
+} 
+
+
+/* NAV */
+
+nav{
+    background-color: #346f79;
+    height: 5vh;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    
+    
+}
+
+nav ul{
+
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-family: Perpetua Titling MT;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    height: 40px;
+}
+
+nav ul li a:hover{
+    background-color: #4a757c;
+
+}
+
+#mccl {
+
+background-color: aqua;
+
+}
+
+
+/* MAIN */
+main {
+    
+
+
+}
+
+
+
+#beneficios{
+
+    display: grid;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(163, 238, 163);
+    grid-template-columns: 5% 26.66% 5% 26.66% 5% 26.66% 5%;
+    grid-template-rows: 5% 90% 5%;
+    grid-template-areas: "a1 a1 a1 a1 a1 a1 a1"
+                         "a2 a3 a4 a5 a6 a7 a8"
+                         "a9 a10 a11 a12 a13 a14 a15";
+                         
+    
+  }
+
+  #exp1 {
+      background-color:rgb(218, 64, 18);
+      grid-area: a3
+
+
+  }
+
+  #exp2{
+      background-color: rgb(147, 23, 204);
+      grid-area: a5
+
+
+  }
+
+  #exp3{
+      background-color: rgb(215, 218, 18);
+      grid-area: a7
+
+
+  }
+
+
+.carousel-inner {
+
+    height: 400px;
+    width: auto;
+   
+    
+
+}
+
+
+
+
+
+.chat {
+
+    width: 60px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
+}
+
+.chat img {
+
+    width: 100%;
+    height: auto;
+}
+
+.chat img:hover {
+
+    filter: saturate(80%);
+    filter: opacity(50%);
+
+}
+
+#mccl {
+
+    background-color: aqua;
+    
+    }
+
+#titulo {
+
+    $ColorDeTitulos:  red;
+
+    h1 {
+    
+        color: $ColorDeTitulos
+    
+    }
+    
+    
+}    
+
+
+/* FOOTER */
+
+footer {
+    height: 20vh;
+    background-color: #265F68;
+    
+    
+    
+    
+}
+
+.footer-social {
+
+    display: inline-block;
+    width: 75vw;
+}
+
+
+.footer-social ul li {
+
+        display: inline-block
+        
+        
+}
+.social img {
+    width: 60px;
+    height: auto;
+    margin: 50px;
+
+}
+
+.social img:hover {
+
+    filter: saturate(80%);
+    filter: opacity(50%);
+}
+
+.social-experta img {
+
+    width: 200px;
+    height: auto;
+    margin: 50px;
+}
+
+.social-experta img:hover {
+
+    filter: saturate(80%);
+    filter: opacity(50%);
+
+}
+
+
+
+
+  

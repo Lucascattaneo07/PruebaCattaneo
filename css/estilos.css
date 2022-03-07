@@ -5,28 +5,28 @@
 /* BODY */
 /* HEADER */
 header {
-  height: 20vh;
+  height: 150px;
   background-color: #265F68; }
 
-#perfil {
-  position: absolute;
-  top: 15px;
-  left: 20px; }
+#logo {
+  top: 15px; }
 
-.card-img {
-  height: 150px; }
+.logo-img {
+  height: 180px; }
 
-.card-img img {
+.logo-img img {
   height: 100%;
-  width: auto; }
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 /* NAV */
 nav {
   background-color: #346f79;
-  height: 5vh;
+  height: 40px;
   text-align: center;
-  position: sticky;
-  top: 0; }
+  position: sticky; }
 
 nav ul {
   list-style: none;
@@ -37,7 +37,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   width: 20%;
-  height: 50px; }
+  height: 40px; }
 
 nav ul li a {
   color: white;
@@ -49,12 +49,11 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #4a757c; }
 
-#mccl {
-  background-color: aqua; }
-
-/* MAIN */
-#beneficios {
+/* FONDO */
+#tablas {
+  background-color: aqua;
   display: grid;
+  background-size: cover;
   height: 600px;
   width: 100%;
   background-color: #a3eea3;
@@ -62,21 +61,30 @@ nav ul li a:hover {
   grid-template-rows: 5% 90% 5%;
   grid-template-areas: "a1 a1 a1 a1 a1 a1 a1" "a2 a3 a4 a5 a6 a7 a8" "a9 a10 a11 a12 a13 a14 a15"; }
 
-#exp1 {
-  background-color: #da4012;
+#tabla1 {
+  background-color: red;
+  font-family: Perpetua;
+  font-size: 25px;
+  text-align: center;
   grid-area: a3; }
 
-#exp2 {
-  background-color: #9317cc;
+#tabla2 {
+  background-color: #00ff4c;
+  font-family: Perpetua;
+  font-size: 25px;
+  text-align: center;
   grid-area: a5; }
 
-#exp3 {
-  background-color: #d7da12;
+#tabla3 {
+  background-color: #751dbd;
+  font-family: Perpetua;
+  font-size: 25px;
+  text-align: center;
   grid-area: a7; }
 
-.carousel-inner {
-  height: 400px;
-  width: auto; }
+.tabla3 img {
+  display: inline-block;
+  list-style: none; }
 
 .chat {
   width: 60px;
@@ -92,38 +100,19 @@ nav ul li a:hover {
   filter: saturate(80%);
   filter: opacity(50%); }
 
-#mccl {
-  background-color: aqua; }
-
-#titulo h1 {
-  color: red; }
-
 /* FOOTER */
 footer {
-  height: 20vh;
-  background-color: #265F68; }
+  height: 200px;
+  background-color: #ffffff;
+  margin: 0%; }
 
 .footer-social {
-  display: inline-block;
-  width: 75vw; }
+  display: inline-block; }
 
 .footer-social ul li {
   display: inline-block; }
 
-.social img {
-  width: 60px;
+.footer-social img {
+  width: auto;
   height: auto;
-  margin: 50px; }
-
-.social img:hover {
-  filter: saturate(80%);
-  filter: opacity(50%); }
-
-.social-experta img {
-  width: 200px;
-  height: auto;
-  margin: 50px; }
-
-.social-experta img:hover {
-  filter: saturate(80%);
-  filter: opacity(50%); }
+  margin-top: 25%; }

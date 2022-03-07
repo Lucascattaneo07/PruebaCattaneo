@@ -6,57 +6,50 @@
 
 /* BODY */
 
-.body {
-    
 
-    
-}
+
+
 
 /* HEADER */
 
 
 
 header {
-    height: 20vh;
-    background-color: #265F68;
-    
 
-}
-
-#perfil {
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    
-
-
-}
-
-.card-img {
-    
     height: 150px;
-    
-    
-    
+    background-color: #265F68;
 
 }
 
-.card-img img {
+#logo {
+
+    top: 15px;
     
+}
+
+.logo-img {
+
+    height: 180px;
+    
+}
+
+.logo-img img {
+
     height: 100%;
     width: auto;
-
-} 
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* NAV */
 
 nav{
     background-color: #346f79;
-    height: 5vh;
+    height: 40px;
     text-align: center;
     position: sticky;
-    top: 0;
+    
     
     
 }
@@ -72,7 +65,7 @@ nav ul{
 nav ul li{
     display: inline-block;
     width: 20%;
-    height: 50px;
+    height: 40px;
 }
 
 nav ul li a{
@@ -88,25 +81,13 @@ nav ul li a:hover{
 
 }
 
-#mccl {
+/* FONDO */
 
-background-color: aqua;
-
-}
-
-
-/* MAIN */
-main {
+#tablas {
     
-
-
-}
-
-
-
-#beneficios{
-
+    background-color: aqua;
     display: grid;
+    background-size: cover;
     height: 600px;
     width: 100%;
     background-color: rgb(163, 238, 163);
@@ -115,44 +96,47 @@ main {
     grid-template-areas: "a1 a1 a1 a1 a1 a1 a1"
                          "a2 a3 a4 a5 a6 a7 a8"
                          "a9 a10 a11 a12 a13 a14 a15";
-                         
-    
-  }
 
-  #exp1 {
-      background-color:rgb(218, 64, 18);
-      grid-area: a3
-
-
-  }
-
-  #exp2{
-      background-color: rgb(147, 23, 204);
-      grid-area: a5
-
-
-  }
-
-  #exp3{
-      background-color: rgb(215, 218, 18);
-      grid-area: a7
-
-
-  }
-
-
-.carousel-inner {
-
-    height: 400px;
-    width: auto;
    
+}
+
+#tabla1 {
+
+    background-color: red;
+    font-family: Perpetua;
+    font-size: 25px;
+    text-align: center;
+    grid-area: a3
+}
+
+#tabla2 { 
+
+    background-color: rgb(0, 255, 76);
+    font-family: Perpetua;
+    font-size: 25px;
+    text-align: center;
+    grid-area: a5
     
+}
+
+#tabla3 {
+
+    background-color: rgb(117, 29, 189);
+    font-family: Perpetua;
+    font-size: 25px;
+    text-align: center;
+    grid-area: a7
+
 
 }
 
+.tabla3 img {
+
+    display: inline-block;
+    list-style: none;
 
 
-
+}
 
 .chat {
 
@@ -174,80 +158,37 @@ main {
     filter: saturate(80%);
     filter: opacity(50%);
 
+
+
+
 }
-
-#mccl {
-
-    background-color: aqua;
-    
-    }
-
-#titulo {
-
-    $ColorDeTitulos:  red;
-
-    h1 {
-    
-        color: $ColorDeTitulos
-    
-    }
-    
-    
-}    
-
 
 /* FOOTER */
 
 footer {
-    height: 20vh;
-    background-color: #265F68;
-    
-    
-    
-    
+
+    height: 200px;
+    background-color: #ffffff;
+    margin: 0%;
 }
 
 .footer-social {
 
     display: inline-block;
-    width: 75vw;
-}
+    
 
+
+}
 
 .footer-social ul li {
-
-        display: inline-block
-        
-        
+    
+    display: inline-block;
+    
 }
-.social img {
-    width: 60px;
+
+.footer-social img {
+
+    width: auto;
     height: auto;
-    margin: 50px;
-
+    margin-top: 25%;
 }
-
-.social img:hover {
-
-    filter: saturate(80%);
-    filter: opacity(50%);
-}
-
-.social-experta img {
-
-    width: 200px;
-    height: auto;
-    margin: 50px;
-}
-
-.social-experta img:hover {
-
-    filter: saturate(80%);
-    filter: opacity(50%);
-
-}
-
-
-
-
-  
